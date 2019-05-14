@@ -23,12 +23,15 @@
             <ul>
                 <li onclick="visual_click();">
                     <h1>Visual</h1>
+                    <div class="line"></div>
                 </li>
                 <li onclick="portfolio_click();">
                     <h1>Skills</h1>
+                    <div class="line"></div>
                 </li>
                 <li onclick="contents_click();">
                     <h1>Contents</h1>
+                    <div class="line"></div>
                 </li>
             </ul>
         </div>
@@ -137,25 +140,27 @@
         $("html,body").stop().animate({
             scrollTop: '0px'
         }, {
-                duration: 800,
-                complete: function () { }
-            });
+            duration: 800,
+            complete: function() {}
+        });
     }
+
     function portfolio_click() {
         $("html,body").stop().animate({
             scrollTop: '800px'
         }, {
-                duration: 800,
-                complete: function () { }
-            });
+            duration: 800,
+            complete: function() {}
+        });
     }
+
     function contents_click() {
         $("html,body").stop().animate({
             scrollTop: '1170px'
         }, {
-                duration: 800,
-                complete: function () { }
-            });
+            duration: 800,
+            complete: function() {}
+        });
     }
 </script>
 
