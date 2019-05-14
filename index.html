@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이다운 포트폴리오</title>
+    <script src="js/Card.js"></script>
+    <script src="js/App.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href=""><img src="images/img_logo.png" alt="logo" width="80" height="80"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li onclick="visual_click();">
+                    <h1>Visual</h1>
+                </li>
+                <li onclick="portfolio_click();">
+                    <h1>Skills</h1>
+                </li>
+                <li onclick="contents_click();">
+                    <h1>Contents</h1>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="visual" class="box">
+        <h1>양영 디지털 고등학교<br>소프트웨어 개발과<br>이 다 운</h1>
+    </section>
+
+    <section id="portfolio" class="box">
+        <div class="title">
+            <h2>My Skills</h2>
+        </div>
+        <div class="card-list">
+            <div class="card" data-percent="80">
+                <div class="canvas-container">
+                    <canvas></canvas>
+                </div>
+                <div class="info">
+                    <p>HTML & CSS</p>
+                </div>
+            </div>
+
+            <div class="card" data-percent="85">
+                <div class="canvas-container">
+                    <canvas></canvas>
+                </div>
+                <div class="info">
+                    <p>Javascript</p>
+                </div>
+            </div>
+
+            <div class="card" data-percent="60">
+                <div class="canvas-container">
+                    <canvas></canvas>
+                </div>
+                <div class="info">
+                    <p>Android</p>
+                </div>
+            </div>
+
+            <div class="card" data-percent="70">
+                <div class="canvas-container">
+                    <canvas></canvas>
+                </div>
+                <div class="info">
+                    <p>JSP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contents" class="box">
+        <div class="title">
+            <h2>My Portfolio</h2>
+        </div>
+        <div class="grid-area">
+            <div class="grid">
+                <div class="grid-item">
+                    <a href="images/img_data.PNG"><img src="images/img_data.PNG" width="200px"></a>
+                    <div><a href="https://github.com/knwoo0916/portfolio">깃허브 주소 바로가기</a></div>
+                </div>
+                <div class="grid-item">
+                    <a href="images/img_prep.jpg"><img src="images/img_prep.jpg" width="200px"></a>
+                    <div><a href="https://github.com/knwoo0916/portfolio">깃허브 주소 바로가기</a></div>
+                </div>
+                <div class="grid-item">
+                    <a href="images/img_top20.PNG"><img src="images/img_top20.PNG" width="200px"></a>
+                    <div><a href="https://github.com/knwoo0916/portfolio">깃허브 주소 바로가기</a></div>
+                </div>
+                <div class="grid-item">
+                    <a href="images/img_prep.jpg"><img src="images/img_prep.jpg" width="200px"></a>
+                    <div><a href="https://github.com/knwoo0916/portfolio">깃허브 주소 바로가기</a></div>
+                </div>
+                <div class="grid-item">
+                    <a href="images/img_search.PNG"><img src="images/img_search.PNG" width="200px"></a>
+                    <div><a href="https://github.com/knwoo0916/portfolio">깃허브 주소 바로가기</a></div>
+                </div>
+                <div class="grid-item">
+                    <a href="images/img_graph.PNG"><img src="images/img_graph.PNG" width="200px"></a>
+                    <div><a href="https://github.com/knwoo0916/portfolio">깃허브 주소 바로가기</a></div>
+                </div>
+                <div class="grid-item">
+                    <a href="images/img_prep.jpg"><img src="images/img_prep.jpg" width="200px"></a>
+                    <div><a href="https://github.com/knwoo0916/portfolio">깃허브 주소 바로가기</a></div>
+                </div>
+                <div class="grid-item">
+                    <a href="images/img_prep.jpg"><img src="images/img_prep.jpg" width="200px"></a>
+                    <div><a href="https://github.com/knwoo0916/portfolio">깃허브 주소 바로가기</a></div>
+                </div>
+                <div class="grid-item">
+                    <a href="images/img_prep.jpg"><img src="images/img_prep.jpg" width="200px"></a>
+                    <div><a href="https://github.com/knwoo0916/portfolio">깃허브 주소 바로가기</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer">010 - 3365 - 5018 | knwoo0916@naver.com</div>
+        <div class="footer">&copy;copyright 2019.daun Lee All rights reserved.</div>
+    </section>
+</body>
+<script>
+    function visual_click() {
+        $("html,body").stop().animate({
+            scrollTop: '0px'
+        }, {
+                duration: 800,
+                complete: function () { }
+            });
+    }
+    function portfolio_click() {
+        $("html,body").stop().animate({
+            scrollTop: '800px'
+        }, {
+                duration: 800,
+                complete: function () { }
+            });
+    }
+    function contents_click() {
+        $("html,body").stop().animate({
+            scrollTop: '1170px'
+        }, {
+                duration: 800,
+                complete: function () { }
+            });
+    }
+</script>
+
+</html>
